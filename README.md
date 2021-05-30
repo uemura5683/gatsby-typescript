@@ -125,4 +125,10 @@ gatsby-config.jsの中身を修正します。
       },
     },
 
+進捗
+https://honmushi.com/2018/11/26/createblog/
+
+コンテンツを作成は未定
+
+
 -------
