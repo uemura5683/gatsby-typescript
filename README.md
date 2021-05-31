@@ -103,32 +103,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
-
-history
-npm install -g gatsby-cli
-gatsby new system https://github.com/gatsbyjs/gatsby-starter-hello-world
-gatsby develop
-
--------
-
-firebase
-https://honmushi.com/2018/11/26/createblog/
-
-gatsby-config.jsの中身を修正します。
-
-とりあえずデフォルトでも動きますが、サイトのtitleとか変えておきましょう。 GoogleAnaliticsとかtwitterアカウントとか用意してあれば、設定しておくのが良いです。
-
-    {
-      resolve: `gatsby-plugin-google-analytics`    ,
-      options: {
-       //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-
-進捗
-https://honmushi.com/2018/11/26/createblog/
-
-コンテンツを作成は未定
-
-
--------
