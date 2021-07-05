@@ -6,19 +6,11 @@ export default props => {
   return (
     <Menu {...props}>
       <Link to="/" className="menu-item" >
-        ホームページ
+        TOP
       </Link>
-      <Link to="/page-2" className="menu-item" >
-        ページ2
-        </Link>
-
-        <Link to="/page-3" className="menu-item" >
-        ページ3
-        </Link>
-
-        <Link to="/page-4" className="menu-item" >
-        ページ4
-        </Link>
+      <Link to="/frontend" className="menu-item" >
+        Front End
+      </Link>
     </Menu>
   );
 };
