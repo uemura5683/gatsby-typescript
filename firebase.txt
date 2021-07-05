@@ -1,0 +1,1 @@
+https://www.gatsbyjs.com/plugins/gatsby-plugin-firebase/
