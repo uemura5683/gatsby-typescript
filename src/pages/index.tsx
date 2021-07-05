@@ -17,16 +17,15 @@ function IndexPage() {
       >
         <div className="list">
           <h1>Frontend</h1>
-          <StaticImage
-            src="../images/gatsby-astronaut.png"
-            width={300}
-            quality={95}
-            alt="A Gatsby astronaut"
-            style={{ marginBottom: `1.45rem` }}
-          />
-          <p>
-            <Link to="/frontend/">Go to page 2</Link> <br />
-          </p>
+          <Link to="/frontend/">
+            <StaticImage
+              src="../images/gatsby-astronaut.png"
+              width={300}
+              quality={95}
+              alt="A Gatsby astronaut"
+              style={{ marginBottom: `1.45rem` }}
+            />
+          </Link>
         </div>
       </motion.div>
   </Layout>
