@@ -6,7 +6,7 @@ import Menu from "./Menu";
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#89A6D1`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: 1200,
         padding: `1.45rem 1.0875rem`,
       }}
     >
