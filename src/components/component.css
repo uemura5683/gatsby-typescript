@@ -1,16 +1,22 @@
+/**
+* hurger
+**/
+header {
+    z-index: 1;
+}
 .bm-burger-button {
     position: fixed;
     width: 36px;
     height: 30px;
     left: 36px;
-    top: 36px;
+    top: 15px;
 } 
 .bm-burger-bars {
   background: white;
   height: 2px !important;
 }
 .bm-burger-bars-hover {
-  background: #white;
+  background: white;
 }
 .bm-cross-button {
   height: 24px;
@@ -26,7 +32,7 @@
 .bm-menu {
   background: white;
   padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+  font-size: 1.8rem;
 }
 .bm-morph-shape {
   fill: #373a47;
@@ -39,7 +45,32 @@
   display: inline-block;
   text-decoration: none;
   outline: none;
+  padding: 1.5rem 0;
 }
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+  top: 0;
+}
+/**
+* wrap
+**/
+.card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-content {
+    width: calc(99.9% / 3);
+    text-align: center;
+}
+.card-content .title {
+    width: 100%;
+    font-size: 3.6rem;
+    line-height: 1.6;
+}
+
+/**
+* img
+**/
+.gatsby-image-wrapper-constrained {
+    vertical-align: middle;
 }
