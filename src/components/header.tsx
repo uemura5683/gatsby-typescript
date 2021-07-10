@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import Menu from "./Menu";
 
 const Header = ({ siteTitle }) => (
@@ -8,6 +9,9 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `#89A6D1`,
       marginBottom: `1.45rem`,
+      position: `sticky`,
+      top: `0px`,
+      left: `0px`,
     }}
   >
     <Menu width={250}/>
@@ -18,7 +22,7 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, textAlign: `center`, }}>
         <Link
           to="/"
           style={{
@@ -26,7 +30,11 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <StaticImage
+            src="../images/logo.png"
+            width={218}
+            alt="EGM system"
+          />
         </Link>
       </h1>
     </div>

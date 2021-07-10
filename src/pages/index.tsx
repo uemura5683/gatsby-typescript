@@ -15,18 +15,22 @@ function IndexPage() {
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="list">
-          <h1>Frontend</h1>
-          <Link to="/frontend/">
-            <StaticImage
-              src="../images/gatsby-astronaut.png"
-              width={300}
-              quality={95}
-              alt="A Gatsby astronaut"
-              style={{ marginBottom: `1.45rem` }}
-            />
-          </Link>
+      <div className="card-wrap">
+        <div className="card-content">
+          <div className="list">
+            <div className="title">Frontend</div>
+            <Link to="/frontend/">
+              <StaticImage
+                src="../images/top/frontend.png"
+                width={300}
+                quality={95}
+                alt="A Gatsby astronaut"
+                style={{ marginBottom: `1.45rem` }}
+              />
+            </Link>
+          </div>
         </div>
+      </div>        
       </motion.div>
   </Layout>
   )
