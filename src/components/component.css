@@ -52,15 +52,26 @@ header {
   top: 0;
 }
 /**
-* wrap
+* footer
+**/
+footer {
+  font-size: 1.4rem;
+}
+footer a {
+  color: white;
+}
+/**
+* card wrap
 **/
 .card-wrap {
     display: flex;
     flex-wrap: wrap;
 }
 .card-content {
-    width: calc(99.9% / 3);
+    width: calc(99.9% / 3 - 20px);
     text-align: center;
+    box-shadow: 0 0 2px 2px #89a6d1, 2px 2px 2px 1px #9c9c9c;
+    margin: 0 10px 20px;
 }
 .card-content .title {
     width: 100%;
