@@ -14,7 +14,6 @@ const Header = ({ siteTitle }) => (
       left: `0px`,
     }}
   >
-    <Menu width={250}/>
     <div
       style={{
         margin: `0 auto`,
