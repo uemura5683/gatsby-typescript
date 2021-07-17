@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "gatsby"
 import { slide as Menu } from "react-burger-menu";
 
-export default Props => {
+const Props = () => {
   return (
-    <Menu {...Props}>
+    <Menu>
       <Link to="/" className="menu-item" >
         TOP
       </Link>
@@ -14,3 +14,4 @@ export default Props => {
     </Menu>
   );
 };
+export default Props;
