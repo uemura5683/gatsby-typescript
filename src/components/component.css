@@ -4,6 +4,9 @@
 header {
     z-index: 1;
 }
+.menu, .header--menu__btn {
+  display: none;
+}
 .bm-burger-button {
     position: fixed;
     width: 36px;

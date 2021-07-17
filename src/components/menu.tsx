@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "gatsby"
-import { slide as Menu } from "react-burger-menu";
 
 const Props = () => {
+  const [close, setOpen] = React.useState(true)
+  const toggle = () => setOpen(!close)
   return (
-    <>
-    <Menu>
+    <div className={close ? 'header--menu__content isClose' : 'header--menu__content isOpen'}>
       <Link to="/" className="menu-item" >
         TOP
       </Link>
       <Link to="/frontend" className="menu-item" >
         Front End
       </Link>
-    </Menu>
-    </>
+    </div>
   );
 };
 export default Props;
