@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "gatsby"
-import Menu from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 
-export default props => {
+export default Props => {
   return (
-    <Menu {...props}>
+    <Menu {...Props}>
       <Link to="/" className="menu-item" >
         TOP
       </Link>
