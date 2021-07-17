@@ -4,7 +4,8 @@ import { slide as Menu } from "react-burger-menu";
 
 const Props = () => {
   return (
-    <Menu {...Props}>
+    <>
+    <Menu>
       <Link to="/" className="menu-item" >
         TOP
       </Link>
@@ -12,6 +13,7 @@ const Props = () => {
         Front End
       </Link>
     </Menu>
+    </>
   );
 };
 export default Props;
