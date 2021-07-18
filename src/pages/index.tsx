@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -20,6 +20,34 @@ function IndexPage() {
           <div className="list">
             <div className="title">Frontend</div>
             <Link to="/frontend/">
+              <StaticImage
+                src="../images/top/frontend.png"
+                width={300}
+                quality={95}
+                alt="A Gatsby astronaut"
+                style={{ marginBottom: `1.45rem` }}
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="card-content">
+          <div className="list">
+            <div className="title">Backend</div>
+            <Link to="/backend/">
+              <StaticImage
+                src="../images/top/frontend.png"
+                width={300}
+                quality={95}
+                alt="A Gatsby astronaut"
+                style={{ marginBottom: `1.45rem` }}
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="card-content">
+          <div className="list">
+            <div className="title">Other</div>
+            <Link to="/other/">
               <StaticImage
                 src="../images/top/frontend.png"
                 width={300}

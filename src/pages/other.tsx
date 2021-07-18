@@ -6,7 +6,7 @@ import FrontendList from "../components/frontendlist"
 
 const SecondPage = () => (
   <Layout>
-      <Seo title="フロントエンド一覧" />
+      <Seo title="その他" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
         initial={{ x: 0, opacity: 0 }}

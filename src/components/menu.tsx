@@ -11,6 +11,12 @@ const Props = () => {
       <Link to="/frontend" className="menu-item" >
         Front End
       </Link>
+      <Link to="/backend" className="menu-item" >
+        Back End
+      </Link>
+      <Link to="/other" className="menu-item" >
+        Other
+      </Link>
     </Menu>
   );
 };
