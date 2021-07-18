@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Menu from "./Menu";
+import Menu from "../components/menu"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -14,6 +14,7 @@ const Header = ({ siteTitle }) => (
       left: `0px`,
     }}
   >
+    <Menu />
     <div
       style={{
         margin: `0 auto`,
