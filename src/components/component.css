@@ -85,3 +85,63 @@ footer a {
 .gatsby-image-wrapper-constrained {
     vertical-align: middle;
 }
+
+/**
+* bread crumb
+**/
+.breadcrumb {
+  margin: 3rem 2rem 0;
+}
+.breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  font-size: 2.4rem;
+}
+.breadcrumb ul li {
+  list-style-type: none;
+  position: relative;
+  padding: 0 3rem 0 0;
+}
+.breadcrumb ul li:after {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-135deg) translateX(50%);
+  right: 1rem;
+  top: 50%;
+}
+.breadcrumb ul li:last-child:after {
+  content: none;
+}
+.breadcrumb ul li a {
+  text-decoration: none;
+}
+/**
+* title
+**/
+.page-title {
+  color: #89A6D1;
+  text-align: center;
+  font-size: 3.6rem;
+  line-height: 1.6;
+  margin: 0 2rem 2rem;
+  position: relative;
+
+}
+.page-title:before {
+  border: 1px solid #89A6D1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.page-title span {
+  background-color: white;
+  padding: 0 20px;
+}
+

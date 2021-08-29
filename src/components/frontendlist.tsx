@@ -4,7 +4,6 @@ import JSONData from "../content/frontend.json"
 
 const List = () => {
   const Jsondata = JSONData.content;
-  console.log(Jsondata);
   return (
     <div className="card-wrap">
       <div className="card-content">
