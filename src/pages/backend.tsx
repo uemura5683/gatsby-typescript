@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Seo from "../components/seo"
 import BreadCrumb from "../components/breadcrumb"
 import Title from "../components/title"
-import FrontendList from "../components/frontendlist"
+import ServersideList from "../components/serversidelist"
 
 const SecondPage = () => (
   <Layout>
@@ -17,7 +17,7 @@ const SecondPage = () => (
       >
         <BreadCrumb name="Backend" link="/backend"/>
         <Title name="Backend" />
-        <FrontendList />
+        <ServersideList />
      </motion.div>
   </Layout>
 )

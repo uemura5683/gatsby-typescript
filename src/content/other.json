@@ -1,0 +1,19 @@
+{
+    "content": [
+      {
+        "name": "Wordpress",
+        "image": "../images/other/wp.png",
+        "alt": "wp"
+      },
+      {
+        "name": "Movable Type",
+        "image": "../images/other/mt.png",
+        "alt": "Movable type"
+      },
+      {
+        "name": "micro CMS",
+        "image": "../images/other/mcms.png",
+        "alt": "micro CMS"
+      }
+    ]
+  }
