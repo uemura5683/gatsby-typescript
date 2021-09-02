@@ -13,7 +13,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="HTML"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
       <div className="card-content">
@@ -23,7 +23,7 @@ const List = () => {
             width={300}
             quality={95}
             alt="css"
-            style={{ marginBottom: `1.45rem` }}
+            style={{ margin: `5rem` }}
           />
         </div>
       <div className="card-content">
@@ -33,7 +33,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="Javascript"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
       <div className="card-content">
@@ -43,7 +43,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="jquery"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
       <div className="card-content">
@@ -53,7 +53,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="Node.js"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
       <div className="card-content">
@@ -63,7 +63,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="scss.js"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
       <div className="card-content">
@@ -73,7 +73,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="scss.js"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
       <div className="card-content">
@@ -83,7 +83,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="scss.js"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
       <div className="card-content">
@@ -93,7 +93,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="vue.js"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
       <div className="card-content">
@@ -103,7 +103,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="gulp.js"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
     </div>

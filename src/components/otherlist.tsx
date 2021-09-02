@@ -13,7 +13,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="HTML"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
       <div className="card-content">
@@ -23,7 +23,7 @@ const List = () => {
             width={300}
             quality={95}
             alt="Movable Type"
-            style={{ marginBottom: `1.45rem` }}
+            style={{ margin: `5rem` }}
           />
         </div>
       <div className="card-content">
@@ -33,7 +33,7 @@ const List = () => {
           width={300}
           quality={95}
           alt="mcms"
-          style={{ marginBottom: `1.45rem` }}
+          style={{ margin: `5rem` }}
         />
       </div>
     </div>
