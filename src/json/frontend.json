@@ -1,0 +1,54 @@
+{
+    "content": [
+      {
+        "name": "HTML",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/html.png",
+        "alt": "html"
+      },
+      {
+        "name": "CSS",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/css.png",
+        "alt": "css"
+      },
+      {
+        "name": "Javascript",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/js.png",
+        "alt": "Javascript"
+      },
+      {
+        "name": "jQuery",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/jq.png",
+        "alt": "jquery"
+      },
+      {
+        "name": "node.js",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/node.png",
+        "alt": "Node.js"
+      },
+      {
+        "name": "SCSS",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/scss.png",
+        "alt": "scss"
+      },
+      {
+        "name": "Pug",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/pug.png",
+        "alt": "pug"
+      },
+      {
+        "name": "React.js",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/react.png",
+        "alt": "React"
+      },
+      {
+        "name": "Vue.js",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/vue.png",
+        "alt": "vue"
+      },
+      {
+        "name": "gulp.js",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/gulp.png",
+        "alt": "gulp.png"
+      }
+    ]
+  }

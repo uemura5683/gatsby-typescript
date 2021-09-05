@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 import Seo from "../components/seo"
 import BreadCrumb from "../components/breadcrumb"
 import Title from "../components/title"
-import ServersideList from "../components/serversidelist"
+import CardExtend from "../components/card-extend"
+import JSONData from "../json/serverside.json"
+const Jsondata = JSONData.content;
 
 const SecondPage = () => (
   <Layout>
@@ -17,7 +19,7 @@ const SecondPage = () => (
       >
         <BreadCrumb name="Backend" link="/backend"/>
         <Title name="Backend" />
-        <ServersideList />
+        <CardExtend data={Jsondata} />
      </motion.div>
   </Layout>
 )
