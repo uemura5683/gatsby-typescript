@@ -9,10 +9,16 @@ const Props = () => {
         TOP
       </Link>
       <Link to="/frontend" className="menu-item" >
-        Front End
+        Frontend
       </Link>
-      <Link to="/backend" className="menu-item" >
-        Back End
+      <Link to="/serverside" className="menu-item" >
+        Serverside
+      </Link>
+      <Link to="/cms" className="menu-item" >
+        CMS
+      </Link>
+      <Link to="/design" className="menu-item" >
+        Design
       </Link>
       <Link to="/other" className="menu-item" >
         Other

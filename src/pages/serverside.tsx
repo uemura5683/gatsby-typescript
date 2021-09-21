@@ -10,15 +10,15 @@ const Jsondata = JSONData.content;
 
 const SecondPage = () => (
   <Layout>
-      <Seo title="Backend" />
+      <Seo title="Serverside" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
         initial={{ x: 0, opacity: 0 }}
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Backend" link="/backend"/>
-        <Title name="Backend" />
+        <BreadCrumb name="Serverside" link="/serverside"/>
+        <Title name="Serverside" />
         <CardExtend data={Jsondata} />
      </motion.div>
   </Layout>

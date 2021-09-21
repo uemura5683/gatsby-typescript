@@ -7,15 +7,15 @@ import Title from "../components/title"
 
 const SecondPage = () => (
   <Layout>
-      <Seo title="Ohter" />
+      <Seo title="Design" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
         initial={{ x: 0, opacity: 0 }}
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Ohter" link="/Ohter"/>
-        <Title name="Ohter" />
+        <BreadCrumb name="Design" link="/Design"/>
+        <Title name="Design" />
      </motion.div>
   </Layout>
 )

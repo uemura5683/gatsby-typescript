@@ -17,47 +17,79 @@ function IndexPage() {
       >
       <div className="card-wrap">
         <div className="card-content">
-          <Link to="/frontend/">
+          <Link to="/frontend">
             <div className="list">
               <div className="title">Frontend</div>
               <StaticImage
                 src="../images/top/frontend.png"
                 width={300}
                 quality={95}
-                alt="A Gatsby astronaut"
+                alt="Frontend"
                 style={{ margin: `5rem` }}
               />
             </div>
           </Link>
         </div>
         <div className="card-content">
-          <Link to="/backend/">
+          <Link to="/serverside">
             <div className="list">
-              <div className="title">Backend</div>
+              <div className="title">Serverside</div>
               <StaticImage
-                src="../images/top/backend.png"
+                src="../images/top/serverside.png"
                 width={300}
                 quality={95}
-                alt="A Gatsby astronaut"
+                alt="Serverside"
                 style={{ margin: `5rem` }}
               />
             </div>
           </Link>
         </div>
         <div className="card-content">
-          <Link to="/other/">
+          <Link to="/cms">
+            <div className="list">
+              <div className="title">CMS</div>
+                <StaticImage
+                  src="../images/top/cms.png"
+                  width={300}
+                  quality={95}
+                  alt="CMS"
+                  style={{ margin: `5rem` }}
+                />
+            </div>
+          </Link>
+        </div>
+        
+        <div className="card-content">
+          <Link to="/design">
+            <div className="list">
+              <div className="title">Design</div>
+                <StaticImage
+                  src="../images/top/design.png"
+                  width={300}
+                  quality={95}
+                  alt="Design"
+                  style={{ margin: `5rem` }}
+                />
+            </div>
+          </Link>
+        </div>
+
+        <div className="card-content">
+          <Link to="/others">
             <div className="list">
               <div className="title">Other</div>
                 <StaticImage
                   src="../images/top/other.png"
                   width={300}
                   quality={95}
-                  alt="A Gatsby astronaut"
+                  alt="Other"
                   style={{ margin: `5rem` }}
                 />
             </div>
           </Link>
         </div>
+
+
       </div>        
       </motion.div>
   </Layout>
