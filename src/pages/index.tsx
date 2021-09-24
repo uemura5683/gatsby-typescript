@@ -75,7 +75,7 @@ function IndexPage() {
         </div>
 
         <div className="card-content">
-          <Link to="/others">
+          <Link to="/other">
             <div className="list">
               <div className="title">Other</div>
                 <StaticImage
