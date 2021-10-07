@@ -22,7 +22,6 @@ function IndexPage() {
               <div className="title">Frontend</div>
               <StaticImage
                 src="../images/top/frontend.png"
-                width={300}
                 quality={95}
                 alt="Frontend"
                 style={{ margin: `5rem` }}
@@ -36,7 +35,6 @@ function IndexPage() {
               <div className="title">Serverside</div>
               <StaticImage
                 src="../images/top/serverside.png"
-                width={300}
                 quality={95}
                 alt="Serverside"
                 style={{ margin: `5rem` }}
@@ -50,7 +48,6 @@ function IndexPage() {
               <div className="title">CMS</div>
                 <StaticImage
                   src="../images/top/cms.png"
-                  width={300}
                   quality={95}
                   alt="CMS"
                   style={{ margin: `5rem` }}
@@ -65,7 +62,6 @@ function IndexPage() {
               <div className="title">Design</div>
                 <StaticImage
                   src="../images/top/design.png"
-                  width={300}
                   quality={95}
                   alt="Design"
                   style={{ margin: `5rem` }}
@@ -80,7 +76,6 @@ function IndexPage() {
               <div className="title">Other</div>
                 <StaticImage
                   src="../images/top/other.png"
-                  width={300}
                   quality={95}
                   alt="Other"
                   style={{ margin: `5rem` }}

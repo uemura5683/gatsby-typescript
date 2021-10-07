@@ -6,12 +6,14 @@ export default function List(Jsondata) {
       <div className="card-wrap">
         {Jsondata.map((Jsondata, index) => 
           <div className="card-content" key={index}>
-            <div className="title">{Jsondata.name}</div>
-            <img
-              src={Jsondata.image}
-              alt={Jsondata.alt}
-              style={{ margin: `5rem 0` }}
-            />
+            <a href="/">
+              <div className="title">{Jsondata.name}</div>
+              <img
+                src={Jsondata.image}
+                alt={Jsondata.alt}
+                style={{ margin: `5rem auto` }}
+              />
+            </a>
           </div>        
         )}
       </div>

@@ -38,6 +38,71 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+    <div className="header-sns hidden-phone">
+        <ul>
+          <li>
+            <Link
+              to="/"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              <StaticImage
+                src="../images/sns/github.png"
+                width={30}
+                alt="github"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              <StaticImage
+                src="../images/sns/nu-blog.png"
+                width={30}
+                alt="nu-blog"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link
+                to="/"
+                style={{
+                  color: `white`,
+                  textDecoration: `none`,
+                }}
+              >
+              <StaticImage
+                src="../images/sns/nu-portfolio.png"
+                width={30}
+                alt="nu-stack"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link
+                to="/"
+                style={{
+                  color: `white`,
+                  textDecoration: `none`,
+                }}
+              >
+              <StaticImage
+                src="../images/sns/twitter.png"
+                width={30}
+                alt="twitter"
+              />
+            </Link>
+          </li>
+        </ul>
+    </div>
+
   </header>
 )
 
