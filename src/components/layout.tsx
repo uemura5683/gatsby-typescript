@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
             color: `white`
           }}
         >
-          © {new Date().getFullYear()} EGM SYSTEM
+          © {new Date().getFullYear()} UESS
         </footer>
       </div>
     </>

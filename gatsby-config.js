@@ -1,3 +1,10 @@
+   
+const path = require('path');
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -14,20 +21,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-firebase",
-    //   options: {
-    //     credentials: {
-    //       apiKey: "<YOUR_FIREBASE_API_KEY>",
-    //       authDomain: "<YOUR_FIREBASE_AUTH_DOMAIN>",
-    //       databaseURL: "<YOUR_FIREBASE_DATABASE_URL>",
-    //       projectId: "<YOUR_FIREBASE_PROJECT_ID>",
-    //       storageBucket: "<YOUR_FIREBASE_STORAGE_BUCKET>",
-    //       messagingSenderId: "<YOUR_FIREBASE_MESSAGING_SENDER_ID>",
-    //       appId: "<YOUR_FIREBASE_APP_ID>"
-    //     }
-    //   }
-    // },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: process.env.FIREBASE_KEY,
+          authDomain: process.env.FIREBASE_DOMAIN,
+          databaseURL: process.env.FIREBASE_DATABASE,
+          projectId: process.env.FIREBASE_PROJECT_ID,
+          storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+          messagingSenderId: process.env.FIREBASE_SENDER_ID,
+          appId: process.env.FIREBASE_APPID
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -36,10 +43,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-typescript`,
@@ -47,5 +54,29 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-microcms",
+      options: {
+        apiKey: process.env.API_KEY,
+        serviceId: 'egmsystem',
+        apis: [
+          {
+            endpoint: "frontend",
+          },
+          {
+            endpoint: "serverside",
+          },
+          {
+            endpoint: "other",
+          },
+          {
+            endpoint: "design",
+          },
+          {
+            endpoint: "cms",
+          }
+        ],
+      },
+    },
   ],
 }

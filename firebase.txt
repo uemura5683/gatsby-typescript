@@ -1,1 +1,5 @@
 https://www.gatsbyjs.com/plugins/gatsby-plugin-firebase/
+
+https://ebisu.com/note/microcms-guide-update/
+
+https://www.gatsbyjs.com/plugins/gatsby-plugin-firebase/
