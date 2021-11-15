@@ -19,7 +19,7 @@ const SecondPage = () => (
       >
         <BreadCrumb name="CMS" link="/cms"/>
         <Title name="CMS" />
-        <CardExtend data={Jsondata} />
+        <CardExtend data={Jsondata} name="cms"/>
      </motion.div>
   </Layout>
 )

@@ -48,7 +48,7 @@
       {
         "name": "gulp.js",
         "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/gulp.png",
-        "alt": "gulp.png"
+        "alt": "gulp"
       }
     ]
   }

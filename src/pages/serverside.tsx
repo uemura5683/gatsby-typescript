@@ -19,7 +19,7 @@ const SecondPage = () => (
       >
         <BreadCrumb name="Serverside" link="/serverside"/>
         <Title name="Serverside" />
-        <CardExtend data={Jsondata} />
+        <CardExtend data={Jsondata} path="Serverside"/>
      </motion.div>
   </Layout>
 )

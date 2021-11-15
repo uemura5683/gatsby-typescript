@@ -18,7 +18,7 @@ const SecondPage = () => (
       >
         <BreadCrumb name="Frontend" link="/frontend" />
         <Title name="Frontend" />
-        <CardExtend data={Jsondata} />
+        <CardExtend data={Jsondata} path="frontend" />
      </motion.div>
   </Layout>
 )
