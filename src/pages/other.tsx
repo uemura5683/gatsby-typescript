@@ -14,7 +14,7 @@ const SecondPage = () => (
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Ohter" link="/Ohter"/>
+        <BreadCrumb name="Ohter" link="/other" name_child={null} link_child={null} />
         <Title name="Ohter" />
      </motion.div>
   </Layout>

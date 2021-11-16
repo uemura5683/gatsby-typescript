@@ -17,9 +17,9 @@ const SecondPage = () => (
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Serverside" link="/serverside"/>
+        <BreadCrumb name="Serverside" link="/serverside" name_child={null} link_child={null} />
         <Title name="Serverside" />
-        <CardExtend data={Jsondata} path="Serverside"/>
+        <CardExtend data={Jsondata} path="serverside"/>
      </motion.div>
   </Layout>
 )

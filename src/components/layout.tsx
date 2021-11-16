@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
             color: `white`
           }}
         >
-          © {new Date().getFullYear()} UESS
+          © {new Date().getFullYear()} Uemu Cheet Sheer
         </footer>
       </div>
     </>

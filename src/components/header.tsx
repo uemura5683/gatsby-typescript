@@ -32,8 +32,8 @@ const Header = ({ siteTitle }) => (
         >
           <StaticImage
             src="../images/logo.png"
-            width={74}
-            alt="UESS"
+            width={315}
+            alt="Uemu Cheet Sheer"
           />
         </Link>
       </h1>

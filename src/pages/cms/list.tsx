@@ -11,14 +11,14 @@ const params = location.search
     , splits = params.split("=");
 const SecondPage = () => (
 <Layout>
-      <Seo title="Frontend" />
+      <Seo title="Cms" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
         initial={{ x: 0, opacity: 0 }}
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Frontend" link="/frontend" name_child={`${splits[1]}`} link_child={`${params}`}/>
+        <BreadCrumb name="Cms" link="/cms" name_child={`${splits[1]}`} link_child={`${params}`}/>
         <Title name={`${splits[1]}`} />
         <CardExtend data={Jsondata}/>
      </motion.div>
