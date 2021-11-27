@@ -7,8 +7,6 @@ import Title from "../../components/title"
 import CardExtend from "../../components/card-extend-detail"
 import JSONData from "../../json/list.json"
 const Jsondata = JSONData.content;
-const params = location.search
-    , splits = params.split("=");
 const SecondPage = () => (
 <Layout>
       <Seo title="Serverside" />
