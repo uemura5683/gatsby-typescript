@@ -1,3 +1,7 @@
 https://techblog.kayac.com/rtdb-vs-firestore
 
 https://www.gatsbyjs.com/plugins/gatsby-plugin-firebase/
+
+https://blog.microcms.io/gatsby-microcms-media/
+
+https://www.zakioka.net/blog/gatsby-microcms/

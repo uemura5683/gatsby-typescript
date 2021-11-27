@@ -61,6 +61,9 @@ module.exports = {
         serviceId: 'egmsystem',
         apis: [
           {
+            endpoint: "top",
+          },
+          {
             endpoint: "frontend",
           },
           {

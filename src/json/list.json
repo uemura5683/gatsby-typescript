@@ -1,6 +1,7 @@
 {
     "content": [
       {
+        "type": "frontend",
         "name": "HTML",
         "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/html.png",
         "url": "https://coding-calc.com/",
@@ -9,6 +10,7 @@
         "alt": "html"
       },
       {
+        "type": "frontend",
         "name": "HTML",
         "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/html.png",
         "url": "https://coding-calc.com/",

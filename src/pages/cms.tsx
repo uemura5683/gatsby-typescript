@@ -4,11 +4,10 @@ import { motion } from "framer-motion";
 import Seo from "../components/seo"
 import BreadCrumb from "../components/breadcrumb"
 import Title from "../components/title"
-import CardExtend from "../components/card-extend"
 import JSONData from "../json/cms.json"
+import { graphql } from "gatsby"
 const Jsondata = JSONData.content;
-
-const SecondPage = () => (
+const SecondPage = ({ data }) => (
   <Layout>
       <Seo title="CMS" />
       <motion.div
@@ -19,9 +18,39 @@ const SecondPage = () => (
       >
         <BreadCrumb name="CMS" link="/cms" name_child={null} link_child={null} />
         <Title name="CMS" />
-        <CardExtend data={Jsondata} path="cms"/>
+        <div className="card-wrap">
+          {data.allMicrocmsCms.edges.map(({ node }) => (
+            <div className="card-content"  key={node.id}>
+              <a href={`${node.link}`}>
+                <div className="list">
+                  <div className="title">{node.name}</div>
+                  <img src={`${node.image.url}`} alt={node.name} style={{ margin: `5rem auto` }} />
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
      </motion.div>
   </Layout>
 )
 
 export default SecondPage
+
+export const query = graphql`
+  {
+    allMicrocmsCms {
+      edges {
+        node {
+          link
+          id
+          name
+          image {
+            url
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+`

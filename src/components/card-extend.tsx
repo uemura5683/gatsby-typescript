@@ -9,7 +9,7 @@ const List = ({data, path}) => {
               <h3 className="title">{Jsondata.name}</h3>
               <img
                 src={Jsondata.image}
-                alt={Jsondata.alt}
+                alt={Jsondata.name}
                 style={{ margin: `5rem auto` }}
               />
             </a>

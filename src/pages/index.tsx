@@ -1,12 +1,10 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link, graphql } from "gatsby"
 import { motion } from "framer-motion";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-function IndexPage() {
-  return (
+const IndexPage = ({ data }) => (
     <Layout>
       <Seo title="トップページ" />
       <motion.div
@@ -15,80 +13,39 @@ function IndexPage() {
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-      <div className="card-wrap">
-        <div className="card-content">
-          <Link to="/frontend">
-            <div className="list">
-              <div className="title">Frontend</div>
-              <StaticImage
-                src="../images/top/frontend.png"
-                quality={95}
-                alt="Frontend"
-                style={{ margin: `5rem` }}
-              />
+        <div className="card-wrap">
+          {data.allMicrocmsTop.edges.map(({ node }) => (
+            <div className="card-content"  key={node.id}>
+              <Link to={`${node.link}`}>
+                <div className="list">
+                  <div className="title">{node.name}</div>
+                  <img src={`${node.image.url}`} alt={node.name} style={{ margin: `5rem auto` }} />
+                </div>
+              </Link>
             </div>
-          </Link>
+          ))}
         </div>
-        <div className="card-content">
-          <Link to="/serverside">
-            <div className="list">
-              <div className="title">Serverside</div>
-              <StaticImage
-                src="../images/top/serverside.png"
-                quality={95}
-                alt="Serverside"
-                style={{ margin: `5rem` }}
-              />
-            </div>
-          </Link>
-        </div>
-        <div className="card-content">
-          <Link to="/cms">
-            <div className="list">
-              <div className="title">CMS</div>
-                <StaticImage
-                  src="../images/top/cms.png"
-                  quality={95}
-                  alt="CMS"
-                  style={{ margin: `5rem` }}
-                />
-            </div>
-          </Link>
-        </div>
-        
-        <div className="card-content">
-          <Link to="/design">
-            <div className="list">
-              <div className="title">Design</div>
-                <StaticImage
-                  src="../images/top/design.png"
-                  quality={95}
-                  alt="Design"
-                  style={{ margin: `5rem` }}
-                />
-            </div>
-          </Link>
-        </div>
-
-        <div className="card-content">
-          <Link to="/other">
-            <div className="list">
-              <div className="title">Other</div>
-                <StaticImage
-                  src="../images/top/other.png"
-                  quality={95}
-                  alt="Other"
-                  style={{ margin: `5rem` }}
-                />
-            </div>
-          </Link>
-        </div>
-
-
-      </div>        
       </motion.div>
   </Layout>
-  )
-}
+)
 
 export default IndexPage;
+
+export const query = graphql`
+  {
+    allMicrocmsTop {
+      edges {
+        node {
+          link
+          id
+          name
+          image {
+            url
+            height
+            width
+          }
+        }
+      }
+    }
+  }
+`
