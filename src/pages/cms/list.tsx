@@ -7,8 +7,6 @@ import Title from "../../components/title"
 import CardExtend from "../../components/card-extend-detail"
 import JSONData from "../../json/list.json"
 const Jsondata = JSONData.content;
-const params = location.search
-    , splits = params.split("=");
 const SecondPage = () => (
 <Layout>
       <Seo title="Cms" />
@@ -18,8 +16,8 @@ const SecondPage = () => (
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Cms" link="/cms" name_child={`${splits[1]}`} link_child={`${params}`}/>
-        <Title name={`${splits[1]}`} />
+        <BreadCrumb name="Cms" link="/cms" name_child="Wordpress" link_child="/cms/list?param=Wordpress"/>
+        <Title name="Wordpress" />
         <CardExtend data={Jsondata}/>
      </motion.div>
   </Layout>

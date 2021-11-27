@@ -6,7 +6,6 @@ import BreadCrumb from "../../components/breadcrumb"
 import Title from "../../components/title"
 import CardExtend from "../../components/card-extend-detail"
 import JSONData from "../../json/list.json"
-
 const Jsondata = JSONData.content;
 const params = location.search
     , splits = params.split("=");
@@ -19,8 +18,8 @@ const SecondPage = () => (
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Serverside" link="/serverside" name_child={`${splits[1]}`} link_child={`${params}`}/>
-        <Title name={`${splits[1]}`} />
+        <BreadCrumb name="Serverside" link="/serverside" name_child="PHP" link_child="/serverside/list?param=php" />
+        <Title name="PHP" />
         <CardExtend data={Jsondata}/>
      </motion.div>
   </Layout>

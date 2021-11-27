@@ -6,10 +6,7 @@ import BreadCrumb from "../../components/breadcrumb"
 import Title from "../../components/title"
 import CardExtend from "../../components/card-extend-detail"
 import JSONData from "../../json/list.json"
-
 const Jsondata = JSONData.content;
-const params = location.search
-    , splits = params.split("=");
 const SecondPage = () => (
 <Layout>
       <Seo title="Frontend" />
@@ -19,8 +16,8 @@ const SecondPage = () => (
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Frontend" link="/frontend" name_child={`${splits[1]}`} link_child={`${params}`}/>
-        <Title name={`${splits[1]}`} />
+        <BreadCrumb name="Frontend" link="/frontend" name_child="HTML" link_child="/frontend/list?param=html"/>
+        <Title name="HTML" />
         <CardExtend data={Jsondata}/>
      </motion.div>
   </Layout>
