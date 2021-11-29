@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import Seo from "../components/seo"
 import BreadCrumb from "../components/breadcrumb"
 import Title from "../components/title"
-import JSONData from "../json/cms.json"
 import { graphql } from "gatsby"
-const Jsondata = JSONData.content;
-const SecondPage = ({ data }) => (
-  <Layout>
+
+const SecondPage = ({ data }) => {
+  return (
+    <Layout>
       <Seo title="CMS" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
@@ -30,9 +30,10 @@ const SecondPage = ({ data }) => (
             </div>
           ))}
         </div>
-     </motion.div>
-  </Layout>
-)
+      </motion.div>
+    </Layout>
+  )
+}
 
 export default SecondPage
 

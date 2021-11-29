@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({ data }) => {
+  return (
     <Layout>
       <Seo title="トップページ" />
       <motion.div
@@ -26,8 +27,9 @@ const IndexPage = ({ data }) => (
           ))}
         </div>
       </motion.div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default IndexPage;
 

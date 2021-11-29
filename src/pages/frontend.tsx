@@ -7,8 +7,10 @@ import Title from "../components/title"
 import CardExtend from "../components/card-extend"
 import JSONData from "../json/frontend.json"
 const Jsondata = JSONData.content;
-const SecondPage = () => (
-  <Layout>
+
+const SecondPage = () => {
+  return (
+    <Layout>
       <Seo title="フロントエンド一覧" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
@@ -16,10 +18,11 @@ const SecondPage = () => (
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Frontend" link="/frontend" />
+        <BreadCrumb name="Frontend" link="/frontend" name_child={null} link_child={null}/>
         <Title name="Frontend" />
         <CardExtend data={Jsondata} path="frontend" />
-     </motion.div>
-  </Layout>
-)
+      </motion.div>
+    </Layout>
+  )
+}
 export default SecondPage

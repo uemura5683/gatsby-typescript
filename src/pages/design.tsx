@@ -5,8 +5,9 @@ import Seo from "../components/seo"
 import BreadCrumb from "../components/breadcrumb"
 import Title from "../components/title"
 
-const SecondPage = () => (
-  <Layout>
+const SecondPage = () => {
+  return (
+    <Layout>
       <Seo title="Design" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
@@ -16,8 +17,8 @@ const SecondPage = () => (
       >
         <BreadCrumb name="Design" link="/design" name_child={null} link_child={null} />
         <Title name="Design"/>
-     </motion.div>
-  </Layout>
-)
-
+      </motion.div>
+    </Layout>
+  )
+}
 export default SecondPage

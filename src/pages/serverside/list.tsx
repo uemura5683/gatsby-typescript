@@ -6,9 +6,17 @@ import BreadCrumb from "../../components/breadcrumb"
 import Title from "../../components/title"
 import CardExtend from "../../components/card-extend-detail"
 import JSONData from "../../json/list.json"
+import { useLocation } from "@reach/router"
 const Jsondata = JSONData.content;
-const SecondPage = () => (
-<Layout>
+
+const SecondPage = () => {
+
+  const location = useLocation()
+      , params = location.search
+      , splits = params.split("=");
+
+  return (
+    <Layout>
       <Seo title="Serverside" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
@@ -16,10 +24,11 @@ const SecondPage = () => (
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Serverside" link="/serverside" name_child="PHP" link_child="/serverside/list?param=php" />
-        <Title name="PHP" />
+        <BreadCrumb name="Serverside" link="/serverside" name_child={`${splits[1]}`} link_child={`${params}`}/>
+        <Title name={`${splits[1]}`} />
         <CardExtend data={Jsondata}/>
-     </motion.div>
-  </Layout>
-)
+      </motion.div>
+    </Layout>
+  );
+}
 export default SecondPage

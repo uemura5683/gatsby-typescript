@@ -5,3 +5,5 @@ https://www.gatsbyjs.com/plugins/gatsby-plugin-firebase/
 https://blog.microcms.io/gatsby-microcms-media/
 
 https://www.zakioka.net/blog/gatsby-microcms/
+
+https://yoshiba.dev/2021/06/08--get-current-url/
