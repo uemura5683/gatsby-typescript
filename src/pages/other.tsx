@@ -1,8 +1,9 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import { Link, graphql } from "gatsby"
 import { motion } from "framer-motion";
-import Seo from "../components/seo"
 import BreadCrumb from "../components/breadcrumb"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 import Title from "../components/title"
 
 const SecondPage = () => {

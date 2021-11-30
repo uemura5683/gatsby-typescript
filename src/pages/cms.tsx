@@ -1,10 +1,10 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import { Link, graphql } from "gatsby"
 import { motion } from "framer-motion";
+import Layout from "../components/layout"
 import Seo from "../components/seo"
 import BreadCrumb from "../components/breadcrumb"
 import Title from "../components/title"
-import { graphql } from "gatsby"
 
 const SecondPage = ({ data }) => {
   return (
@@ -21,12 +21,12 @@ const SecondPage = ({ data }) => {
         <div className="card-wrap">
           {data.allMicrocmsCms.edges.map(({ node }) => (
             <div className="card-content"  key={node.id}>
-              <a href={`${node.link}`}>
+              <Link to={`${node.link}`}>
                 <div className="list">
                   <div className="title">{node.name}</div>
                   <img src={`${node.image.url}`} alt={node.name} style={{ margin: `5rem auto` }} />
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>

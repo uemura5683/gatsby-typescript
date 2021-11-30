@@ -1,6 +1,7 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import { Link, graphql } from "gatsby"
 import { motion } from "framer-motion";
+import Layout from "../components/layout"
 import Seo from "../components/seo"
 import BreadCrumb from "../components/breadcrumb"
 import Title from "../components/title"

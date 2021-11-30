@@ -1,14 +1,12 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import { Link, graphql } from "gatsby"
 import { motion } from "framer-motion";
+import Layout from "../components/layout"
 import Seo from "../components/seo"
 import BreadCrumb from "../components/breadcrumb"
 import Title from "../components/title"
-import CardExtend from "../components/card-extend"
-import JSONData from "../json/serverside.json"
-const Jsondata = JSONData.content;
 
-const SecondPage = () => {
+const SecondPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="Serverside" />
@@ -20,10 +18,40 @@ const SecondPage = () => {
       >
         <BreadCrumb name="Serverside" link="/serverside" name_child={null} link_child={null} />
         <Title name="Serverside" />
-        <CardExtend data={Jsondata} path="serverside"/>
+        <div className="card-wrap">
+          {data.allMicrocmsServerside.edges.map(({ node }) => (
+            <div className="card-content"  key={node.id}>
+              <Link to={`${node.link}`}>
+                <div className="list">
+                  <div className="title">{node.name}</div>
+                  <img src={`${node.image.url}`} alt={node.name} style={{ margin: `5rem auto` }} />
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </motion.div>
     </Layout>
-  )  
+  )
 }
 
 export default SecondPage
+
+export const query = graphql`
+  {
+    allMicrocmsServerside {
+      edges {
+        node {
+          id
+          image {
+            height
+            url
+            width
+          }
+          link
+          name
+        }
+      }
+    }
+  }
+`
