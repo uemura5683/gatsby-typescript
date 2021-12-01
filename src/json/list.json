@@ -3,7 +3,7 @@
       {
         "type": "frontend",
         "name": "HTML",
-        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/html.png",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/noimage.png",
         "url": "https://coding-calc.com/",
         "title": "コーディング単位計算ツール",
         "description": "コーディング時に面倒な単位の計算ができる自家製計算機です。",
@@ -12,7 +12,7 @@
       {
         "type": "frontend",
         "name": "HTML",
-        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/frontend/html.png",
+        "image": "https://raw.githubusercontent.com/uemura5683/gatsby-typescript/main/src/images/noimage.png",
         "url": "https://coding-calc.com/",
         "title": "コーディング単位計算ツール",
         "description": "コーディング時に面倒な単位の計算ができる自家製計算機です。",
