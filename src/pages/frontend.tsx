@@ -5,11 +5,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import BreadCrumb from "../components/breadcrumb"
 import Title from "../components/title"
-import CardExtend from "../components/card-extend"
-import JSONData from "../json/frontend.json"
-const Jsondata = JSONData.content;
 
-const SecondPage = () => {
+const SecondPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="フロントエンド一覧" />
@@ -21,9 +18,39 @@ const SecondPage = () => {
       >
         <BreadCrumb name="Frontend" link="/frontend" name_child={null} link_child={null}/>
         <Title name="Frontend" />
-        <CardExtend data={Jsondata} path="frontend" />
+        <div className="card-wrap">
+          {data.allMicrocmsFrontend.edges.map(({ node }) => (
+            <div className="card-content"  key={node.id}>
+              <Link to={`${node.link}`}>
+                <div className="list">
+                  <div className="title">{node.name}</div>
+                  <img src={`${node.image.url}`} alt={node.name} style={{ margin: `5rem auto` }} />
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </motion.div>
     </Layout>
   )
 }
 export default SecondPage
+
+export const query = graphql`
+  {
+    allMicrocmsFrontend {
+      edges {
+        node {
+          id
+          image {
+            height
+            url
+            width
+          }
+          link
+          name
+        }
+      }
+    }
+  }
+`
