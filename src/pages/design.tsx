@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Title from "../components/title"
 
-const SecondPage = () => {
+const SecondPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="Design" />
@@ -17,9 +17,41 @@ const SecondPage = () => {
         transition={{ duration: 0.5 }}
       >
         <BreadCrumb name="Design" link="/design" name_child={null} link_child={null} />
-        <Title name="Design"/>
+        <Title name="Design" />
+        <div className="card-wrap">
+          {data.allMicrocmsDesign.edges.map(({ node }) => (
+            <div className="card-content"  key={node.id}>
+              <Link to={`${node.link}`}>
+                <div className="list">
+                  <div className="title">{node.name}</div>
+                  <img src={`${node.image.url}`} alt={node.name} style={{ margin: `5rem auto` }} />
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </motion.div>
     </Layout>
   )
 }
+
 export default SecondPage
+
+export const query = graphql`
+  {
+    allMicrocmsDesign {
+      edges {
+        node {
+          id
+          image {
+            height
+            url
+            width
+          }
+          link
+          name
+        }
+      }
+    }
+  }
+`

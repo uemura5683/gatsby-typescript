@@ -17,6 +17,9 @@ const Props = () => {
       <Link to="/cms" className="menu-item" >
         CMS
       </Link>
+      <Link to="/design" className="menu-item" >
+        Design
+      </Link>
       <Link to="/other" className="menu-item" >
         Other
       </Link>

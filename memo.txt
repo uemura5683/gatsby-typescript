@@ -7,3 +7,9 @@ https://blog.microcms.io/gatsby-microcms-media/
 https://www.zakioka.net/blog/gatsby-microcms/
 
 https://yoshiba.dev/2021/06/08--get-current-url/
+
+  /**
+  * https://sheets.googleapis.com/v4/spreadsheets/19uXIbn-CyVSLIRG5USTPUBcFX3ZQVOsRZNM_l6kH45E/values/cheetsheet?key=AIzaSyBayz_XeqdqZGg1Q-WHNuAVT2L1N_5uI70
+  **/
+
+https://docs.google.com/spreadsheets/d/19uXIbn-CyVSLIRG5USTPUBcFX3ZQVOsRZNM_l6kH45E/edit#gid=0
