@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
           <StaticImage
             src="../images/logo.png"
             width={315}
-            alt="Uemu Cheet Sheer"
+            alt="Uemu Cheet Sheet"
           />
         </Link>
       </h1>

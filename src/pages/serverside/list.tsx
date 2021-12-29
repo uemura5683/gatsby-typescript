@@ -1,19 +1,25 @@
 import * as React from "react"
+import axios from "axios"
 import Layout from "../../components/layout"
 import { motion } from "framer-motion";
 import Seo from "../../components/seo"
 import BreadCrumb from "../../components/breadcrumb"
 import Title from "../../components/title"
 import CardExtend from "../../components/card-extend-detail"
-import JSONData from "../../json/list.json"
 import { useLocation } from "@reach/router"
-const Jsondata = JSONData.content;
+const { useState, useEffect } = React
 
 const SecondPage = () => {
-
   const location = useLocation()
-      , params = location.search
-      , splits = params.split("=");
+    , params = location.search
+    , splits = params.split("=")
+    ,[skilllist, setUsers] = useState([]);
+
+    useEffect(() => {
+      axios.get('https://egmsystem-af1f6-default-rtdb.firebaseio.com/content.json')
+        .then(res => setUsers(res.data))
+        .catch(error => console.log(error));
+    }, [] );
 
   return (
     <Layout>
@@ -26,7 +32,7 @@ const SecondPage = () => {
       >
         <BreadCrumb name="Serverside" link="/serverside" name_child={`${splits[1]}`} link_child={`${params}`}/>
         <Title name={`${splits[1]}`} />
-        <CardExtend data={Jsondata}/>
+        <CardExtend data={skilllist} lang={`${splits[1]}`}/>
       </motion.div>
     </Layout>
   );

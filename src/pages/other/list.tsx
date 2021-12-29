@@ -15,26 +15,26 @@ const SecondPage = () => {
     , splits = params.split("=")
     ,[skilllist, setUsers] = useState([]);
 
-  useEffect(() => {
-    axios.get('https://egmsystem-af1f6-default-rtdb.firebaseio.com/content.json')
-      .then(res => setUsers(res.data))
-      .catch(error => console.log(error));
-  }, [] );
-    
+    useEffect(() => {
+      axios.get('https://egmsystem-af1f6-default-rtdb.firebaseio.com/content.json')
+        .then(res => setUsers(res.data))
+        .catch(error => console.log(error));
+    }, [] );
+
   return (
     <Layout>
-      <Seo title="Frontend" />
+      <Seo title="Other" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
         initial={{ x: 0, opacity: 0 }}
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="Frontend" link="/frontend" name_child={`${splits[1]}`} link_child={`${params}`}/>
+        <BreadCrumb name="Other" link="/other" name_child={`${splits[1]}`} link_child={`${params}`}/>
         <Title name={`${splits[1]}`} />
         <CardExtend data={skilllist} lang={`${splits[1]}`}/>
       </motion.div>
     </Layout>
-  )
+  );
 }
 export default SecondPage
