@@ -15,6 +15,7 @@ const SecondPage = () => {
     , splits = params.split("=")
     ,[skilllist, setUsers] = useState([]);
 
+    console.log(process.env.DATA);
     useEffect(() => {
       axios.get(process.env.DATA)
         .then(res => setUsers(res.data))
