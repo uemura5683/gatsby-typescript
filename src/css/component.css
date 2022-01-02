@@ -82,6 +82,22 @@ header .header-sns ul li picture img{
   header .gatsby-image-wrapper img {
     height: 16px;
   }
+  header .header-sns {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: translateY(0%);
+  }
+  header .header-sns ul li {
+    list-style-type: none;
+    width: calc(100% /3 - 10px);
+    text-align: center;
+  }
+  header .header-sns .gatsby-image-wrapper [data-main-image],
+  header .header-sns .gatsby-image-wrapper img {
+    height: auto;
+    border-radius: 0;
+  }
   .bm-burger-button {
     left: 10px;
     top: 12px;
@@ -178,12 +194,39 @@ footer a {
     margin: 0 auto !important;
   }
 }
-
 /**
-* img
+* card wrap detail
 **/
-.gatsby-image-wrapper-constrained {
-    vertical-align: middle;
+.card-content-detail {
+  width: calc(100% / 4);
+}
+.card-content-detail a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card-content-detail img {
+  width: 30%;
+  border: 1px solid #bdc3c7;
+}
+.card-content-detail .title{
+  position: relative;
+  opacity: 1;
+  width: 65%;
+  margin :0;
+}
+.card-content-detail .title h4 {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+/**
+* card wrap detail
+**/
+@media (max-width: 979px) {
+  .card-content-detail {
+    width: 100%;
+  }
 }
 
 /**
@@ -262,16 +305,16 @@ footer a {
   display: none !important;
 }
 .visible-phone {
-  display: none;
+  display: none !important;
 }
 .hidden-phone {
-  display: block;
+  display: block !important;
 }
 @media (max-width: 979px) {
   .visible-phone {
-    display: block;
+    display: block !important;
   }
   .hidden-phone {
-    display: none;
+    display: none !important;
   }
 }

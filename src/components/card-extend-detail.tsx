@@ -5,17 +5,16 @@ const List = ({data, lang}) => {
       <div className="card-wrap">
         {data.map((Jsondata, index) => 
           Jsondata.alt == lang ? (
-            <div className="card-content" key={index}>
+            <div className="card-content-detail" key={index}>
               <a href={`${Jsondata.url}`} target="_blank">
-                <hgroup className="title">
-                    <h3>{Jsondata.title}</h3>
-                    <h4>{Jsondata.description}</h4>
-                </hgroup>
                 <img
                   src={Jsondata.image}
                   alt={Jsondata.alt}
-                  style={{ margin: `5rem auto` }}
+                  style={{ margin: `2rem auto` }}
                 />
+                <hgroup className="title">
+                    <h4>{Jsondata.description}</h4>
+                </hgroup>
               </a>
             </div>  
           ) : null

@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { slide as Menu } from "react-burger-menu";
+import { StaticImage } from "gatsby-plugin-image"
 
 const Props = () => {
   return (
@@ -23,6 +24,58 @@ const Props = () => {
       <Link to="/other" className="menu-item" >
         Other
       </Link>
+      <div className="header-sns visible-phone">
+        <ul>
+          <li>
+            <Link
+              target="_blank"
+              to="https://nu-blogsite.net/"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              <StaticImage
+                src="../images/sns/nu-blog.png"
+                width={30}
+                alt="nu-blog"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link
+                target="_blank"
+                to="https://uemu-engineer.com/"
+                style={{
+                  color: `white`,
+                  textDecoration: `none`,
+                }}
+              >
+              <StaticImage
+                src="../images/sns/nu-portfolio.png"
+                width={30}
+                alt="nu-stack"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link
+                target="_blank"
+                to="https://twitter.com/uemuragame5683"
+                style={{
+                  color: `white`,
+                  textDecoration: `none`,
+                }}
+              >
+              <StaticImage
+                src="../images/sns/twitter.png"
+                width={30}
+                alt="twitter"
+              />
+            </Link>
+          </li>
+        </ul>
+      </div>
     </Menu>
   );
 };

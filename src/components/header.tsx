@@ -42,22 +42,8 @@ const Header = ({ siteTitle }) => (
         <ul>
           <li>
             <Link
-              to="/"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
-            >
-              <StaticImage
-                src="../images/sns/github.png"
-                width={30}
-                alt="github"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/"
+              target="_blank"
+              to="https://nu-blogsite.net/"
               style={{
                 color: `white`,
                 textDecoration: `none`,
@@ -72,7 +58,8 @@ const Header = ({ siteTitle }) => (
           </li>
           <li>
             <Link
-                to="/"
+                target="_blank"
+                to="https://uemu-engineer.com/"
                 style={{
                   color: `white`,
                   textDecoration: `none`,
@@ -87,7 +74,8 @@ const Header = ({ siteTitle }) => (
           </li>
           <li>
             <Link
-                to="/"
+                target="_blank"
+                to="https://twitter.com/uemuragame5683"
                 style={{
                   color: `white`,
                   textDecoration: `none`,

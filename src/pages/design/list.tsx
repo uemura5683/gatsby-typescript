@@ -16,7 +16,7 @@ const SecondPage = () => {
     ,[skilllist, setUsers] = useState([]);
 
     useEffect(() => {
-      axios.get('https://egmsystem-af1f6-default-rtdb.firebaseio.com/content.json')
+      axios.get(process.env.DATA)
         .then(res => setUsers(res.data))
         .catch(error => console.log(error));
     }, [] );
