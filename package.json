@@ -19,7 +19,6 @@
     "gatsby-plugin-react-helmet": "^4.6.0",
     "gatsby-plugin-sass": "^4.6.0",
     "gatsby-plugin-sharp": "^3.6.0",
-    "gatsby-remark-external-links": "^0.0.4",
     "gatsby-source-filesystem": "^4.4.0",
     "gatsby-source-firestore": "^1.0.3",
     "gatsby-source-microcms": "^2.0.0",

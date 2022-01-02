@@ -42,7 +42,6 @@ const Header = ({ siteTitle }) => (
         <ul>
           <li>
             <Link
-              target="_blank"
               to="https://nu-blogsite.net/"
               style={{
                 color: `white`,
@@ -58,7 +57,6 @@ const Header = ({ siteTitle }) => (
           </li>
           <li>
             <Link
-                target="_blank"
                 to="https://uemu-engineer.com/"
                 style={{
                   color: `white`,
@@ -74,7 +72,6 @@ const Header = ({ siteTitle }) => (
           </li>
           <li>
             <Link
-                target="_blank"
                 to="https://twitter.com/uemuragame5683"
                 style={{
                   color: `white`,
