@@ -14,8 +14,7 @@ const SecondPage = () => {
     , params = location.search
     , splits = params.split("=")
     ,[skilllist, setUsers] = useState([]);
-    console.log(process.env.DATA);
-    console.log(process.env.API_KEY);
+
     useEffect(() => {
       axios.get(process.env.DATA)
         .then(res => setUsers(res.data))
