@@ -8,7 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { Link } from "gatsby"
 import Header from "./header"
 import "../css/layout.css"
 import "../css/component.css"
@@ -34,15 +34,42 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            margin: `2rem -1.0875rem 0`,
-            background: `rgb(137, 166, 209)`,
-            padding: `2rem`,
-            color: `white`
-          }}
-        >
-          © {new Date().getFullYear()} Uemu Cheet Sheet
+        <footer>
+          <div className="l-footer_inner">
+            <Link
+              to="/frontend"
+              className="menu-item"
+            >
+              Frontend
+            </Link>
+            <Link
+              to="/serverside"
+              className="menu-item"
+            >
+              Serverside
+            </Link>
+            <Link
+              to="/cms"
+              className="menu-item"
+            >
+              CMS
+            </Link>
+            <Link
+              to="/design"
+              className="menu-item"
+            >
+              Design
+            </Link>
+            <Link
+              to="/other"
+              className="menu-item"
+            >
+              Other
+            </Link>
+          </div>
+          <div className="copyright">
+            © {new Date().getFullYear()} Uemu BK Sheet
+          </div>
         </footer>
       </div>
     </>

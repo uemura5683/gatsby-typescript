@@ -17,6 +17,7 @@ header .header-sns ul {
 }
 header .header-sns ul li {
   margin: 0 10px 0 0;
+  list-style-type: none;
 }
 header .header-sns ul li picture img{
   overflow: hidden;
@@ -101,8 +102,8 @@ header .header-sns ul li picture img{
   .bm-burger-button {
     left: 10px;
     top: 12px;
-    height: 25px;
-    width: 30px;
+    height: 20px;
+    width: 25px;
   }
 }
 /**
@@ -120,6 +121,36 @@ footer {
 footer a {
   color: white;
 }
+footer .l-footer_inner {
+  margin: 2rem -1.0875rem 0;
+  background: rgb(137, 166, 209);
+  padding: 2rem;
+  color: white;
+}
+footer .l-footer_inner a {
+  padding: 0 2rem 0 0;
+  font-size: 1.4rem;
+}
+footer .copyright {
+  margin: 2rem 1.0875rem 0px;
+}
+@media (max-width: 767px) {
+  footer .l-footer_inner {
+    padding: 0;
+  }
+  footer .l-footer_inner a:first-child {
+    border-top: 1px solid white;
+  }
+  footer .l-footer_inner a {
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+}
 /**
 * card wrap
 **/
@@ -131,7 +162,7 @@ footer a {
   position: relative;
   width: calc(99.9% / 3 - 20px);
   text-align: center;
-  box-shadow: 0 0 2px 2px #89a6d1, 2px 2px 2px 1px #9c9c9c;
+  box-shadow: 0 0 2px 2px #89a6d1, 2px 2px 2px 1px #89a6d1;
   margin: 0 10px 20px;
   transition: 1s ease-in-out opacity;
   cursor: pointer;

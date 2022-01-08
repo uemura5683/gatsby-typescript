@@ -27,8 +27,10 @@ const Props = () => {
       <div className="header-sns visible-phone">
         <ul>
           <li>
-            <Link
-              to="https://nu-blogsite.net/"
+            <a
+              href="https://nu-blogsite.net/"
+              target="_blank"
+              rel="noreferrer noopener"
               style={{
                 color: `white`,
                 textDecoration: `none`,
@@ -39,11 +41,13 @@ const Props = () => {
                 width={30}
                 alt="nu-blog"
               />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-                to="https://uemu-engineer.com/"
+            <a
+                href="https://uemu-engineer.com/"
+                target="_blank"
+                rel="noreferrer noopener"
                 style={{
                   color: `white`,
                   textDecoration: `none`,
@@ -54,11 +58,13 @@ const Props = () => {
                 width={30}
                 alt="nu-stack"
               />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-                to="https://twitter.com/uemuragame5683"
+            <a
+                href="https://twitter.com/uemuragame5683"
+                target="_blank"
+                rel="noreferrer noopener"
                 style={{
                   color: `white`,
                   textDecoration: `none`,
@@ -69,7 +75,7 @@ const Props = () => {
                 width={30}
                 alt="twitter"
               />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

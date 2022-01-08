@@ -32,8 +32,8 @@ const Header = ({ siteTitle }) => (
         >
           <StaticImage
             src="../images/logo.png"
-            width={315}
-            alt="Uemu Cheet Sheet"
+            width={257}
+            alt="Uemu BK Sheet"
           />
         </Link>
       </h1>
@@ -41,8 +41,10 @@ const Header = ({ siteTitle }) => (
     <div className="header-sns hidden-phone">
         <ul>
           <li>
-            <Link
-              to="https://nu-blogsite.net/"
+            <a
+              href="https://nu-blogsite.net/"
+              target="_blank"
+              rel="noreferrer noopener"
               style={{
                 color: `white`,
                 textDecoration: `none`,
@@ -53,11 +55,13 @@ const Header = ({ siteTitle }) => (
                 width={30}
                 alt="nu-blog"
               />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-                to="https://uemu-engineer.com/"
+            <a
+                href="https://uemu-engineer.com/"
+                target="_blank"
+                rel="noreferrer noopener"
                 style={{
                   color: `white`,
                   textDecoration: `none`,
@@ -68,11 +72,13 @@ const Header = ({ siteTitle }) => (
                 width={30}
                 alt="nu-stack"
               />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-                to="https://twitter.com/uemuragame5683"
+            <a
+                href="https://twitter.com/uemuragame5683"
+                target="_blank"
+                rel="noreferrer noopener"
                 style={{
                   color: `white`,
                   textDecoration: `none`,
@@ -83,7 +89,7 @@ const Header = ({ siteTitle }) => (
                 width={30}
                 alt="twitter"
               />
-            </Link>
+            </a>
           </li>
         </ul>
     </div>
