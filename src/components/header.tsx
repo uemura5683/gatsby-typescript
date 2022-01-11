@@ -23,17 +23,12 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <h1 style={{ margin: 0, textAlign: `center`, }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+        <Link to="/" >
           <StaticImage
             src="../images/logo.png"
-            width={257}
-            alt="Uemu BK Sheet"
+            width={227}
+            height={28}
+            alt="Uemu BK List"
           />
         </Link>
       </h1>

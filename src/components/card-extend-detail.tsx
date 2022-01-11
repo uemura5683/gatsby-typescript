@@ -7,11 +7,12 @@ const List = ({data, lang}) => {
           Jsondata.alt == lang ? (
             <div className="card-content-detail" key={index}>
               <a href={`${Jsondata.url}`} target="_blank">
-                <img
-                  src={Jsondata.image}
-                  alt={Jsondata.alt}
-                  style={{ margin: `2rem auto` }}
-                />
+                <figure>
+                  <img
+                    src={Jsondata.image}
+                    alt={Jsondata.alt}
+                  />
+                </figure>
                 <hgroup className="title">
                     <h4>{Jsondata.description}</h4>
                 </hgroup>

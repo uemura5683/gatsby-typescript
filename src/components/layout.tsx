@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
             </Link>
           </div>
           <div className="copyright">
-            © {new Date().getFullYear()} Uemu BK Sheet
+            © {new Date().getFullYear()} Uemu BK List
           </div>
         </footer>
       </div>
