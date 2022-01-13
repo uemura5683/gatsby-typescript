@@ -2,7 +2,8 @@
 * hurger
 **/
 header {
-    z-index: 1;
+  z-index: 1;
+  position: relative;
 }
 header .header-sns {
   position: absolute;
@@ -82,6 +83,7 @@ header .header-sns ul li picture img{
   header .gatsby-image-wrapper [data-main-image],
   header .gatsby-image-wrapper img {
     height: 16px;
+    width: auto !important;
   }
   header .header-sns {
     position: relative;
@@ -246,6 +248,15 @@ footer .copyright {
 .card-content-detail figure img {
   margin: 0;
   position: absolute;
+}
+@supports not (aspect-ratio: 1/.62) {
+  .card-content-detail figure {
+    padding-top: 19.3%;
+  } 
+  .card-content-detail figure img {
+    top: 0;
+    left: 0;
+  }
 }
 .card-content-detail .title{
   position: relative;
