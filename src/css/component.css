@@ -69,11 +69,20 @@ header .header-sns ul li picture img{
   color: #b8b7ad;
   padding: 0;
 }
+.bm-item-list ul {
+  list-style-type: none;
+}
+.bm-item-list ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 0;
+}
 .bm-item {
-  display: inline-block;
   text-decoration: none;
   outline: none;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 1rem;
+  color: #89A6D1;
+  font-weight: bold;
 }
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);

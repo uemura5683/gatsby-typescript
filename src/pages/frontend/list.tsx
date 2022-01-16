@@ -7,6 +7,7 @@ import BreadCrumb from "../../components/breadcrumb"
 import Title from "../../components/title"
 import CardExtend from "../../components/card-extend-detail"
 import { useLocation } from "@reach/router"
+
 const { useState, useEffect } = React
 
 const SecondPage = () => {

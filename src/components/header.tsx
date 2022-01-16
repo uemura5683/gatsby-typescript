@@ -1,11 +1,62 @@
 import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { Link, useStaticQuery,graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Menu from "../components/menu"
 
-const Header = ({ siteTitle }) => (
-  <header
+const FrontHeader = () => {
+
+  const data = useStaticQuery(
+    graphql`
+    {
+      allMicrocmsFrontend {
+        edges {
+          node {
+            id
+            link
+            name
+          }
+        }
+      }
+      allMicrocmsServerside {
+        edges {
+          node {
+            id
+            link
+            name
+          }
+        }
+      }
+      allMicrocmsCms {
+        edges {
+          node {
+            id
+            link
+            name
+          }
+        }
+      }
+      allMicrocmsDesign {
+        edges {
+          node {
+            id
+            link
+            name
+          }
+        }
+      }
+      allMicrocmsOther {
+        edges {
+          node {
+            id
+            link
+            name
+          }
+        }
+      }
+    }
+  `)
+  return (
+    <header
     style={{
       background: `#89A6D1`,
       marginBottom: `1.45rem`,
@@ -14,7 +65,7 @@ const Header = ({ siteTitle }) => (
       left: `0px`,
     }}
   >
-    <Menu />
+    <Menu data={data}/>
     <div
       style={{
         margin: `0 auto`,
@@ -90,14 +141,8 @@ const Header = ({ siteTitle }) => (
     </div>
 
   </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+export default FrontHeader
 
-export default Header
