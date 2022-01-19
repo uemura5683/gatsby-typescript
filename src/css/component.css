@@ -8,7 +8,7 @@ header {
 header .header-sns {
   position: absolute;
   top: 50%;
-  right: 2rem;
+  right: calc(1.0875rem + 1rem);
   transform: translateY(-50%);
 }
 header .header-sns ul {
@@ -31,7 +31,7 @@ header .header-sns ul li picture img{
     position: fixed;
     width: 36px;
     height: 30px;
-    left: 36px;
+    left: calc(1.0875rem + 1rem);
     top: 15px;
 } 
 .bm-burger-bars {
@@ -89,7 +89,6 @@ header .header-sns ul li picture img{
   top: 0;
 }
 @media (max-width: 979px) {
-  header .gatsby-image-wrapper [data-main-image],
   header .gatsby-image-wrapper img {
     height: 16px;
     width: auto !important;
@@ -109,6 +108,7 @@ header .header-sns ul li picture img{
   header .header-sns .gatsby-image-wrapper img {
     height: auto;
     border-radius: 0;
+    padding: 0;
   }
   .bm-burger-button {
     left: 10px;
@@ -122,6 +122,14 @@ header .header-sns ul li picture img{
 **/
 main {
   margin: 30px 0 0;
+}
+@media (min-width: 980px) {
+  #gatsby-focus-wrapper {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: calc(54.5px + 2rem + 14.5px + 4rem);
+    box-sizing: border-box;
+ }
 }
 /**
 * footer
@@ -143,7 +151,14 @@ footer .l-footer_inner a {
   font-size: 1.4rem;
 }
 footer .copyright {
-  margin: 2rem 1.0875rem 0px;
+  margin: 2rem 1.0875rem;
+}
+@media (min-width: 980px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   footer .l-footer_inner {
@@ -260,7 +275,7 @@ footer .copyright {
 }
 @supports not (aspect-ratio: 1/.62) {
   .card-content-detail figure {
-    padding-top: 19.3%;
+    padding-top: 18%;
   } 
   .card-content-detail figure img {
     top: 0;
@@ -291,7 +306,7 @@ footer .copyright {
 * bread crumb
 **/
 .breadcrumb {
-  margin: 3rem 2rem 0;
+  margin: 3rem 1rem 0;
 }
 .breadcrumb ul {
   display: flex;
@@ -335,7 +350,7 @@ footer .copyright {
   text-align: center;
   font-size: 3.2rem;
   line-height: 1.6;
-  margin: 0 2rem 2rem;
+  margin: 0 1rem 2rem;
   position: relative;
 
 }
