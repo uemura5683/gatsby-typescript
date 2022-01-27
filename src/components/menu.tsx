@@ -56,10 +56,6 @@ const Props = ({data}) => {
               href="https://nu-blogsite.net/"
               target="_blank"
               rel="noreferrer noopener"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
             >
               <StaticImage
                 src="../images/sns/nu-blog.png"
@@ -73,11 +69,7 @@ const Props = ({data}) => {
                 href="https://uemu-engineer.com/"
                 target="_blank"
                 rel="noreferrer noopener"
-                style={{
-                  color: `white`,
-                  textDecoration: `none`,
-                }}
-              >
+            >
               <StaticImage
                 src="../images/sns/nu-portfolio.png"
                 width={30}
@@ -90,11 +82,7 @@ const Props = ({data}) => {
                 href="https://twitter.com/uemuragame5683"
                 target="_blank"
                 rel="noreferrer noopener"
-                style={{
-                  color: `white`,
-                  textDecoration: `none`,
-                }}
-              >
+            >
               <StaticImage
                 src="../images/sns/twitter.png"
                 width={30}

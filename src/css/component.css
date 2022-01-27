@@ -1,9 +1,30 @@
 /**
-* hurger
+* layout
+**/
+.l-container {
+  margin: 0 auto;
+  padding: 0 1rem 1.5rem;
+}
+/**
+* header
 **/
 header {
   z-index: 1;
   position: relative;
+  background: #89A6D1;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  margin-bottom: 1.45rem;
+}
+header .l-header-inner {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1.45rem 1rem;
+}
+header .c-logo {
+  margin: 0 auto;
+  text-align: center;
 }
 header .header-sns {
   position: absolute;
@@ -141,7 +162,7 @@ footer a {
   color: white;
 }
 footer .l-footer_inner {
-  margin: 2rem -1.0875rem 0;
+  margin: 2rem -1rem 0;
   background: rgb(137, 166, 209);
   padding: 2rem;
   color: white;
@@ -151,13 +172,13 @@ footer .l-footer_inner a {
   font-size: 1.4rem;
 }
 footer .copyright {
-  margin: 2rem 1.0875rem;
+  margin: 2rem 1rem;
 }
 @media (min-width: 980px) {
   footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 2rem);
   }
 }
 @media (max-width: 767px) {
@@ -255,7 +276,8 @@ footer .copyright {
 * card wrap detail
 **/
 .card-content-detail {
-  width: calc(100% / 4);
+  width: calc(100% / 4 - 2rem);
+  margin: 0 1rem;
 }
 .card-content-detail a {
   display: flex;
@@ -299,6 +321,7 @@ footer .copyright {
 @media (max-width: 979px) {
   .card-content-detail {
     width: 100%;
+    margin: 0;
   }
 }
 

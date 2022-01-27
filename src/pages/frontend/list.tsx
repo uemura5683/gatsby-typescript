@@ -7,6 +7,9 @@ import BreadCrumb from "../../components/breadcrumb"
 import Title from "../../components/title"
 import CardExtend from "../../components/card-extend-detail"
 import { useLocation } from "@reach/router"
+// import firebase from 'firebase/app';
+// var admin = require("firebase-admin");
+// var serviceAccount = require("../../../serviceAccountKey.json");
 
 const { useState, useEffect } = React
 

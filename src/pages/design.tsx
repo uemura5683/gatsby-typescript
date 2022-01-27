@@ -9,7 +9,7 @@ import Title from "../components/title"
 const SecondPage = ({ data }) => {
   return (
     <Layout>
-      <Seo title="Design" />
+      <Seo title="デザイン一覧" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
         initial={{ x: 0, opacity: 0 }}
