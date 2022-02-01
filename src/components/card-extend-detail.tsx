@@ -1,10 +1,10 @@
 import * as React from "react"
-const List = ({data, lang}) => {
+const List = ({data, lang, chang}) => {
   return (
     <>
       <div className="card-wrap">
         {data.map((Jsondata, index) => 
-          Jsondata.alt == lang ? (
+          Jsondata.alt == lang && (Jsondata.type == chang || chang == 'default' ||chang == '' ) ? (
             <div className="card-content-detail" key={index}>
               <a href={`${Jsondata.url}`} target="_blank">
                 <figure>

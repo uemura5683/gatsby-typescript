@@ -395,6 +395,41 @@ footer .copyright {
   }
 }
 /**
+* select
+**/
+.c-select-box {
+  position: relative;
+  width: 200px;
+  margin: 0 1rem 1.2rem;
+}
+.c-select-box select {
+  font-size: 1.4rem;
+  height: 40px;
+  width: 100%;
+  appearance: none;
+  position: relative;
+  padding: 5px 10px;
+  border: 2px solid rgb(137, 166, 209);
+  outline: none;
+}
+.c-select-box:after {
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid rgb(137, 166, 209);
+  border-top: 5px solid rgb(137, 166, 209);
+  -webkit-transform: rotate(135deg) translate(-50%, 50%);
+  transform: rotate(135deg) translate(-50%, 50%);
+  top: 50%;
+  right: 10px;
+}
+@media (max-width: 767px) {
+  .c-select-box {
+    width: 100%;
+    margin: 0 0 1.0rem;
+  }
+}
+/**
 * utility
 **/
 .d-none {

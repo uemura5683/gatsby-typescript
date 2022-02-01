@@ -7,9 +7,6 @@ import BreadCrumb from "../../components/breadcrumb"
 import Title from "../../components/title"
 import CardExtend from "../../components/card-extend-detail"
 import { useLocation } from "@reach/router"
-// import firebase from 'firebase/app';
-// var admin = require("firebase-admin");
-// var serviceAccount = require("../../../serviceAccountKey.json");
 
 const { useState, useEffect } = React
 
@@ -17,7 +14,8 @@ const SecondPage = () => {
   const location = useLocation()
     , params = location.search
     , splits = params.split("=")
-    ,[skilllist, setUsers] = useState([]);
+    ,[skilllist, setUsers] = useState([])
+    ,[onchange, onchanges] = useState("");
 
     useEffect(() => {
       axios.get(process.env.DATA)
@@ -36,7 +34,19 @@ const SecondPage = () => {
       >
         <BreadCrumb name="Frontend" link="/frontend" name_child={`${splits[1]}`} link_child={`${params}`}/>
         <Title name={`${splits[1]}`} />
-        <CardExtend data={skilllist} lang={`${splits[1]}`}/>
+        <div className="c-select-box">
+          <select onChange={(e) => onchanges(e.currentTarget.value)}>
+            <option value="default">all</option>
+            <option value="document">document</option>
+            <option value="qiita">qiita</option>
+            <option value="coliss">coliss</option>
+            <option value="blogsite">blogsite</option>
+            <option value="zenn">zenn</option>
+            <option value="conpany">conpany</option>
+            <option value="portfolio">portfolio</option>
+          </select>
+        </div>
+        <CardExtend data={skilllist} lang={`${splits[1]}`} chang={onchange}/>
       </motion.div>
     </Layout>
   )
