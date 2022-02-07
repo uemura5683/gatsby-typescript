@@ -4,8 +4,9 @@ const List = ({data, lang, type, chang}) => {
     <>
       <div className="card-wrap">
         {data.map((Jsondata, index) => 
-             type.indexOf( 'type' ) && Jsondata.alt == lang && (Jsondata.type == chang || chang == 'default' || chang == '' ) 
-          || type.indexOf( 'q' ) && (lang == '' || Jsondata.description.match(lang)) && (Jsondata.type == chang || chang == 'default' || chang == '' ) ? (
+             type.indexOf( 'type' ) != -1  && Jsondata.alt == lang && (Jsondata.type == chang || chang == 'default' || chang == '' ) 
+          || type.indexOf( 'q' ) != -1 && (lang == '' || Jsondata.description.match(lang)) && (Jsondata.type == chang || chang == 'default' || chang == '' ) 
+          || type === '' ? (
             <div className="card-content-detail" key={index}>
               <a href={`${Jsondata.url}`} target="_blank">
                 <figure>
