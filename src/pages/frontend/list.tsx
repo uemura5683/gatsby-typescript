@@ -42,11 +42,12 @@ const SecondPage = () => {
             <option value="coliss">coliss</option>
             <option value="blogsite">blogsite</option>
             <option value="zenn">zenn</option>
-            <option value="conpany">conpany</option>
+            <option value="company">company</option>
+            <option value="codepen">codepen</option>
             <option value="portfolio">portfolio</option>
           </select>
         </div>
-        <CardExtend data={skilllist} lang={`${splits[1]}`} chang={onchange}/>
+        <CardExtend data={skilllist} lang={`${splits[1]}`} type={`${splits[0]}`} chang={onchange} />
       </motion.div>
     </Layout>
   )

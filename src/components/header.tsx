@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Menu from "../components/menu"
 
 const FrontHeader = () => {
-
+  
   const data = useStaticQuery(
     graphql`
     {
@@ -70,6 +70,12 @@ const FrontHeader = () => {
           </Link>
         </h1>
       </div>
+      {/*}
+      <form className="navbar-form" method="GET" action="/search">
+          <input className="head-search-text" type="text" name="q" defaultValue="" placeholder="検索キーワードを入力" />
+          <button type="submit" className="head-search-btn"></button>
+      </form>
+       {*/}
       <div className="header-sns hidden-phone">
           <ul>
             <li>

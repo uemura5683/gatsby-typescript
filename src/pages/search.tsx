@@ -1,11 +1,11 @@
 import * as React from "react"
 import axios from "axios"
-import Layout from "../../components/layout"
+import Layout from "../components/layout"
 import { motion } from "framer-motion";
-import Seo from "../../components/seo"
-import BreadCrumb from "../../components/breadcrumb"
-import Title from "../../components/title"
-import CardExtend from "../../components/card-extend-detail"
+import Seo from "../components/seo"
+import BreadCrumb from "../components/breadcrumb"
+import Title from "../components/title"
+import CardExtend from "../components/card-extend-detail"
 import { useLocation } from "@reach/router"
 const { useState, useEffect } = React
 
@@ -24,15 +24,15 @@ const SecondPage = () => {
 
   return (
     <Layout>
-      <Seo title="CMS" />
+      <Seo title="検索結果" />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
         initial={{ x: 0, opacity: 0 }}
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="CMS" link="/cms" name_child={`${splits[1]}`} link_child={`${params}`}/>
-        <Title name={`${splits[1]}`} />
+        <BreadCrumb name="検索結果" link="/search" name_child={null} link_child={`${params}`}/>
+        <Title name="検索結果" />
         <div className="c-select-box">
           <select onChange={(e) => onchanges(e.currentTarget.value)}>
             <option value="default">all</option>
@@ -49,6 +49,6 @@ const SecondPage = () => {
         <CardExtend data={skilllist} lang={`${splits[1]}`} type={`${splits[0]}`} chang={onchange}/>
       </motion.div>
     </Layout>
-  )
+  );
 }
 export default SecondPage
