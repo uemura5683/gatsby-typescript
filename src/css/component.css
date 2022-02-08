@@ -1,4 +1,10 @@
 /**
+* common
+**/
+input, button {
+  outline: none;
+}
+/**
 * layout
 **/
 .l-container {
@@ -30,7 +36,10 @@ header .header-sns {
   position: absolute;
   top: 50%;
   right: calc(1.0875rem + 1rem);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
 }
 header .header-sns ul {
   display: flex;
@@ -48,12 +57,49 @@ header .header-sns ul li picture img{
   background-color: white;
   padding: 2.5px;
 }
+header .header-keyword {
+  margin: 0;
+}
+header #keyword-checkbox {
+  display: none;
+}
+header label[for*='keyword-checkbox'] {
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+header .keyword-box {
+  position: absolute;
+  top: 0;
+  right: calc(100% + 10px);
+  display: none;
+}
+header .keyword-box .head-search-text {
+  padding: 5px 10px;
+  border: 2px solid rgb(137, 166, 209);
+  height: 30px;
+}
+header .keyword-box .head-search-btn{
+  background: none;
+  border: none;
+  position: absolute;
+  top: calc(50% + 2px);
+  right: 5px;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0;
+}
+header #keyword-checkbox:checked ~ .keyword-box  {
+  display: block; 
+}
 .bm-burger-button {
-    position: fixed;
-    width: 36px;
-    height: 30px;
-    left: calc(1.0875rem + 1rem);
-    top: 15px;
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: calc(1.0875rem + 1rem);
+  top: 15px;
 } 
 .bm-burger-bars {
   background: white;
@@ -109,16 +155,38 @@ header .header-sns ul li picture img{
   background: rgba(0, 0, 0, 0.3);
   top: 0;
 }
+
 @media (max-width: 979px) {
   header .gatsby-image-wrapper img {
     height: 16px;
     width: auto !important;
   }
+  header .keyword-box {
+    top: 42px;
+    right: 1rem;
+    width: calc(100vw - 2rem);
+  }
+  header label[for*='keyword-checkbox'] {
+    margin: 0 .5rem 0 0;
+  }
+  header .keyword-box .head-search-text {
+    padding: 5px 10px;
+    border: 2px solid rgb(137, 166, 209);
+    width: 100%;
+    height: 40px;
+  }
+  header .keyword-box .head-search-btn {
+    right: 10px;
+  }
   header .header-sns {
-    position: relative;
-    top: 0;
+    position: absolute;
+    top: 50%;
     right: 0;
-    transform: translateY(0%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  header .header-sns ul {
+    display: none;
   }
   header .header-sns ul li {
     list-style-type: none;
