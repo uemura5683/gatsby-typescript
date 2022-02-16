@@ -12,9 +12,12 @@ const { useState, useEffect } = React
 const SecondPage = () => {
   const location = useLocation()
     , params = location.search
-    , splits = params.split("=")
-    ,[skilllist, setUsers] = useState([])
-    ,[onchange, onchanges] = useState("");
+    , splits: string[] = params.split("=")
+    , [skilllist, setUsers] = useState([])
+    , [onchange, onchanges] = useState("")
+    , target = `${splits[1]}` !== 'undefined'
+             ? decodeURI( `${splits[1]}` )
+             : '全て';
 
     useEffect(() => {
       axios.get(process.env.DATA)
@@ -24,15 +27,15 @@ const SecondPage = () => {
 
   return (
     <Layout>
-      <Seo title="検索結果" />
+      <Seo title={target + 'の検索結果'} />
       <motion.div
         animate={{ x: 0, opacity: 1 }}
         initial={{ x: 0, opacity: 0 }}
         exit={{ x: 0, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <BreadCrumb name="検索結果" link="/search" name_child={null} link_child={`${params}`}/>
-        <Title name="検索結果" />
+        <BreadCrumb name={target + 'の検索結果'} link="/search" name_child={null} link_child={`${params}`}/>
+        <Title name={target + 'の検索結果'} />
         <div className="c-select-box">
           <select onChange={(e) => onchanges(e.currentTarget.value)}>
             <option value="default">all</option>
