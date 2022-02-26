@@ -15,7 +15,7 @@ const SecondPage = () => {
     , splits: string[] = params.split("=")
     , [skilllist, setUsers] = useState([])
     , [onchange, onchanges] = useState("")
-    , target = `${splits[1]}` !== 'undefined'
+    , target = `${splits[1]}` != ''
              ? decodeURI( `${splits[1]}` )
              : '全て';
 
