@@ -173,6 +173,7 @@ header #keyword-checkbox:checked ~ .keyword-box  {
 @media (max-width: 979px) {
   header .gatsby-image-wrapper img {
     height: 16px;
+    width: auto;
   }
   header .keyword-box {
     top: 42px;
@@ -495,6 +496,7 @@ footer .copyright {
   padding: 5px 10px;
   border: 2px solid var(--blue);
   outline: none;
+  background-color: var(--white);
 }
 .c-select-box:after {
   position: absolute;
