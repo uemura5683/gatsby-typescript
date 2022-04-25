@@ -71,9 +71,9 @@ const Props = ({data}) => {
                 rel="noreferrer noopener"
             >
               <StaticImage
-                src="../images/sns/nu-portfolio.png"
+                src="../images/sns/ustack.png"
                 width={30}
-                alt="nu-stack"
+                alt="ustack"
               />
             </a>
           </li>
