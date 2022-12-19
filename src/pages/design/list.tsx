@@ -35,7 +35,7 @@ const SecondPage = () => {
         <Title name={`${splits[1]}`} />
         <div className="c-select-box">
           <select onChange={(e) => onchanges(e.currentTarget.value)}>
-            <option value="default">all</option>
+          <option value="default">all</option>
             <option value="document">document</option>
             <option value="qiita">qiita</option>
             <option value="coliss">coliss</option>
@@ -44,6 +44,9 @@ const SecondPage = () => {
             <option value="company">company</option>
             <option value="codepen">codepen</option>
             <option value="portfolio">portfolio</option>
+            <option value="tool">tool</option>
+            <option value="curriculum">curriculum</option>
+            <option value="presentation">presentation</option>
             <option value="other">other</option>
           </select>
         </div>

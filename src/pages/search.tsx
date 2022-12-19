@@ -47,6 +47,10 @@ const SecondPage = () => {
             <option value="company">company</option>
             <option value="codepen">codepen</option>
             <option value="portfolio">portfolio</option>
+            <option value="tool">tool</option>
+            <option value="curriculum">curriculum</option>
+            <option value="presentation">presentation</option>
+            <option value="other">other</option>
           </select>
         </div>
         <CardExtend data={skilllist} lang={`${splits[1]}`} type={`${splits[0]}`} chang={onchange}/>
