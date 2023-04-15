@@ -50,6 +50,7 @@ const SecondPage = () => {
             <option value="tool">tool</option>
             <option value="curriculum">curriculum</option>
             <option value="presentation">presentation</option>
+            <option value="github">github</option>
             <option value="other">other</option>
           </select>
         </div>
